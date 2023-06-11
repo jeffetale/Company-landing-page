@@ -19,6 +19,7 @@ body {
   left: 0; /* Positions the element at the left */
   overflow: hidden; /* Hides the overflowing content */
   z-index: -1; /* Sets a negative z-index to position it behind other elements */
+  display: flex; /* Sets the video poster to centre */
 }
 
 .video {
