@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="alpha360.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-
-</head>
+  </head>
 <body class="container">
+  <div class="video-wrapper">
+    <video id="matrix" autoplay muted loop poster="./images/logo.jpg">
+      <source src="./videos/matrix.mp4" type="video/mp4">
+    </video> <!--add png and mp4-->
+
+  </div>
   <header>
     <h1>ALPHA 360</h1>
     <nav>
@@ -33,7 +38,7 @@
         <p>Our team is made up of experts in a variety of fields, including engineering, operations, and customer service. We are committed to providing our customers with the best possible experience, and we are always looking for new ways to improve our services.</p>
         <p>If you are looking for a fast, affordable, and reliable WiFi provider, then Alpha 360 is the right choice for you.</p>
     </section>
-    <section id="subsribe">
+    <section id="subscribe">
         <h2>Subscribe to Our Newsletter</h2>
       <p>Sign up to receive our newsletter and stay up-to-date on our latest news, events, and offers.</p>
       <form action="#" method="post"> 
@@ -59,6 +64,10 @@
         <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
   </footer>
+  <script>
+    const video = document.getElementById('matrix');
+    video.playbackRate = .66; 
+  </script>
     
 </body>
 </html>
