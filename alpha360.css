@@ -1,179 +1,207 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  
-  body {
-    font-family: Raleway;
-    line-height: 1.5;
-    background-color: #f3f3f3;
-    color: #333;
-  }
+  margin: 0; /* Set margin to 0 for all elements */
+  padding: 0; /* Set padding to 0 for all elements */
+  box-sizing: border-box; /* Use border-box model for all elements */
+}
 
-  .video-wrapper {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  }
-  
-  .video {
-    position: absolute;
-    top: 100%;
-    left: 100%;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    
+body {
+  font-family: Raleway; /* Set the font family for the body */
+  line-height: 1.5; /* Set the line height for the body */
+  background-color: #f3f3f3; /* Set the background color for the body */
+  color: #333; /* Set the text color for the body */
+}
 
-  }
-  
-  
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1, h2, h3 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    color: #555;
-  }
-  
-  h2 {
-    font-size: 2rem;
-    color: #333;
-  }
-  
-  h3 {
-    font-size: 1.5rem;
-    color: #444;
-  }
-  
-  p {
-    margin-bottom: 10px;
-  }
-  
-  a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-  }
-  
-  header h1 {
-    font-size: 2.5rem;
-  }
-  
-  nav {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  nav a {
-    margin: 0 10px;
-  }
-  
-  main {
-    padding: 40px 0;
-  }
-  
-  section {
-    margin-bottom: 40px;
-  }
-  
-  #landing-page {
-    text-align: center;
-  }
-  
-  #landing-page h2 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  #about-us {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  #about-us p:last-child {
-    margin-bottom: 0;
-  }
-  
-  #subscribe {
-    text-align: center;
-  }
-  
-  #team {
-    text-align: center;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .contact-info {
-    margin-bottom: 20px;
-  }
-  
-  .social-icons a {
-    color: #fff;
-    font-size: 1.5rem;
-    margin-right: 10px;
-  }
+.video-wrapper {
+  position: fixed; /* Position the element relative to the viewport */
+  width: 100%; /* Set the width to 100% */
+  height: 100%; /* Set the height to 100% */
+  top: 0; /* Position the element at the top */
+  left: 0; /* Position the element at the left */
+  overflow: hidden; /* Hide the overflowing content */
+  z-index: -1; /* Set a negative z-index to position it behind other elements */
+}
 
-  /* ...existing CSS code... */
+.video {
+  position: absolute; /* Position the element relative to its closest positioned ancestor */
+  top: 0; /* Position the element at the top */
+  left: 0; /* Position the element at the left */
+  object-fit: cover; /* Scale the video uniformly to cover the entire container */
+  width: 100%; /* Set the width to 100% */
+  height: 100%; /* Set the height to 100% */
+}
+
+.container {
+  max-width: 960px; /* Set the maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding to the container */
+}
+
+h1, h2, h3 {
+  text-align: center; /* Center the heading elements */
+  margin-bottom: 20px; /* Add margin at the bottom of the heading elements */
+}
+
+h1 {
+  font-size: 2.5rem; /* Set the font size for h1 */
+  color: #555; /* Set the text color for h1 */
+}
+
+h2 {
+  font-size: 2rem; /* Set the font size for h2 */
+  color: #333; /* Set the text color for h2 */
+}
+
+h3 {
+  font-size: 1.5rem; /* Set the font size for h3 */
+  color: #444; /* Set the text color for h3 */
+}
+
+p {
+  margin-bottom: 10px; /* Add margin at the bottom of paragraphs */
+}
+
+a {
+  color: #007bff; /* Set the text color for links */
+  text-decoration: none; /* Remove the underline from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+}
+
+header {
+  background-color: #333; /* Set the background color for the header */
+  color: #fff; /* Set the text color for the header */
+  padding: 10px; /* Add padding to the header */
+}
+
+header h1 {
+  font-size: 2.5rem; /* Set the font size for h1 inside the header */
+}
+
+nav {
+  text-align: center; /* Center the navigation links */
+  margin-top: 20px; /* Add margin at the top of the navigation */
+}
+
+nav a {
+  margin: 0 10px; /* Add margin to the navigation links */
+}
+
+main {
+  padding: 40px 0; /* Add padding to the main content */
+}
+
+section {
+  margin-bottom: 40px; /* Add margin at the bottom of sections */
+}
+
+#landing-page {
+  text-align: center; /* Center the content inside the landing-page section */
+}
+
+#landing-page h2 {
+  font-size: 2.5rem; /* Set the font size for h2 inside the landing-page section */
+  color: #333; /* Set the text color for h2 inside the landing-page section */
+  margin-bottom: 20px; /* Add margin at the bottom of h2 inside the landing-page section */
+}
+
+#about-us {
+  background-color: #fff; /* Set the background color for the about-us section */
+  padding: 20px; /* Add padding to the about-us section */
+  border-radius: 5px; /* Add rounded corners to the about-us section */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow to the about-us section */
+}
+
+#about-us p:last-child {
+  margin-bottom: 0; /* Remove margin at the bottom of the last paragraph inside the about-us section */
+}
+
+#subscribe {
+  text-align: center; /* Center the content inside the subscribe section */
+}
+
+#team {
+  text-align: center; /* Center the content inside the team section */
+}
+
+footer {
+  background-color: #333; /* Set the background color for the footer */
+  color: #fff; /* Set the text color for the footer */
+  padding: 20px; /* Add padding to the footer */
+  text-align: center; /* Center the content inside the footer */
+}
+
+.contact-info {
+  margin-bottom: 20px; /* Add margin at the bottom of the contact-info section */
+}
+
+.social-icons a {
+  color: #fff; /* Set the text color for social media icons */
+  font-size: 1.5rem; /* Set the font size for social media icons */
+  margin-right: 10px; /* Add margin to the right of social media icons */
+}
 
 #landing-page,
 #subscribe,
 #team {
-  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
-  color: #333; /* Set a dark text color */
-  padding: 20px; /* Add padding to the sections */
+  background-color: rgba(255, 255, 255, 0.4); /* Set a semi-transparent white background for landing-page, subscribe, and team sections */
+  color: #333; /* Set the text color for landing-page, subscribe, and team sections */
+  padding: 20px; /* Add padding to landing-page, subscribe, and team sections */
+  position: relative; /* Set the position to relative */
+  z-index: -1; /* Set a negative z-index to position it behind other elements */
 }
 
 #landing-page h2,
 #subscribe h2,
 #team h2 {
-  color: #333; /* Set a dark heading color */
+  color: #333; /* Set the text color for h2 inside landing-page, subscribe, and team sections */
 }
 
 #about-us,
 #subscribe form,
 #team p {
-  color: #555; /* Set a slightly lighter text color for paragraphs and forms */
+  color: #555; /* Set a slightly lighter text color for paragraphs and forms inside about-us, subscribe, and team sections */
 }
 
-/* ...remaining CSS code... */
+.team-images {
+  display: flex; /* Use flexbox to create a horizontal layout for team-images */
+  justify-content: center; /* Center the images horizontally */
+  margin-top: 20px; /* Add margin at the top of team-images */
+}
+
+.team-images img {
+  width: 25%; /* Set the width of each image to 25% of the container */
+  object-fit: cover; /* Maintain the aspect ratio and cover the container */
+  border-radius: 10px; /* Add rounded corners to the images */
+  margin: 0 5px; /* Add margin to the left and right of the images */
+}
+
+
+.team-members {
+  display: flex; /* Use flexbox to create a horizontal layout for team-members */
+  justify-content: center; /* Center the team-members horizontally */
+  margin-top: 20px; /* Add margin at the top of team-members */
+}
+
+.team-member p {
+  text-align: center; /* Center the text inside each team-member */
+  margin-top: 10px; /* Add margin at the top of each team-member paragraph */
+  font-weight: bold; /* Set the font weight of the team-member paragraph */
+}
+
+.team-member img {
+  width: 200px; /* Adjust the width of image */
+  height: 275px; /* Adjust the height of image */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 10px; /* Add rounded corners to the images */
+}
+
+
+
+
+
+
 
   
  
