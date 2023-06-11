@@ -31,9 +31,8 @@ body {
 }
 
 .container {
-  max-width: 960px; /* Sets the maximum width for the container */
-  margin: 0 auto; /* Centers the container horizontally */
-  padding: 20px; /* Adds padding to the container */
+  max-width: 100%; /* Changes the max-width to 100% */
+  padding: 0; /* Removes the padding */
 }
 
 h1, h2, h3 {
@@ -89,11 +88,12 @@ nav a {
 }
 
 main {
-  padding: 40px 0; /* Adds padding to the main content */
+  margin: 0; /* Removes the default margin */
 }
 
+
 section {
-  margin-bottom: 40px; /* Adds margin at the bottom of sections */
+  padding: 40px 20px; /* Adds padding to the sections */
 }
 
 #landing-page {
@@ -145,10 +145,15 @@ footer {
 #landing-page,
 #subscribe,
 #team {
-  background-color: rgba(255, 255, 255, 0.5); /* Sets a semi-transparent white background for landing-page, subscribe, and team sections */
-  color: #333; /* Sets the text color for landing-page, subscribe, and team sections */
-  padding: 20px; /* Adds padding to landing-page, subscribe, and team sections */
-  position: relative; /* Sets the position to relative */
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #333;
+  padding: 20px;
+  position: relative;
+  z-index: -1;
+  width: 100%; /* Adds width: 100% to expand the sections */
+  margin-left: -20px; /* Compensates for the padding on the container */
+  margin-right: -20px; /* Compensates for the padding on the container */
+}
   z-index: -1; /* Sets a negative z-index to position it behind other elements */
 }
 
