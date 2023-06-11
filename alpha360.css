@@ -150,6 +150,31 @@
     font-size: 1.5rem;
     margin-right: 10px;
   }
+
+  /* ...existing CSS code... */
+
+#landing-page,
+#subscribe,
+#team {
+  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+  color: #333; /* Set a dark text color */
+  padding: 20px; /* Add padding to the sections */
+}
+
+#landing-page h2,
+#subscribe h2,
+#team h2 {
+  color: #333; /* Set a dark heading color */
+}
+
+#about-us,
+#subscribe form,
+#team p {
+  color: #555; /* Set a slightly lighter text color for paragraphs and forms */
+}
+
+/* ...remaining CSS code... */
+
   
  
   
